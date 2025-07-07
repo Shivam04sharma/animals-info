@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block title %}About - Animal Information{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold text-primary mb-4">About Animal Information</h1>
+                <p class="lead text-muted">
+                    Dedicated to providing comprehensive, accurate, and accessible animal information and care guidance, powered by real-time data from trusted animal information APIs.
+                </p>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-md-6">
+                    <img src="https://images.pexels.com/photos/133459/pexels-photo-133459.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                         alt="Animal Research" class="img-fluid rounded-3 shadow">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="text-primary mb-3">Our Mission</h3>
+                    <p class="text-muted mb-4">
+                        Animal Information was founded with a simple yet powerful mission: to bridge the gap between 
+                        scientific knowledge and practical animal care. We believe that every animal deserves proper care 
+                        and understanding, whether they're beloved pets or magnificent wildlife.
+                    </p>
+                    <p class="text-muted">
+                        Our platform serves as a comprehensive resource for animal lovers, pet owners, researchers, and 
+                        anyone interested in learning more about the incredible diversity of animal life on our planet.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 order-md-2">
+                    <img src="https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                         alt="Wildlife Conservation" class="img-fluid rounded-3 shadow">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <h3 class="text-primary mb-3">What We Do</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="fas fa-book text-primary me-2"></i>
+                            <strong>Educational Content:</strong> Comprehensive guides on animal behavior, care, and biology
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-search text-primary me-2"></i>
+                            <strong>Animal Database:</strong> Extensive collection of animal profiles and information
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-users text-primary me-2"></i>
+                            <strong>Expert Network:</strong> Collaboration with veterinarians and animal specialists
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-leaf text-primary me-2"></i>
+                            <strong>Conservation Awareness:</strong> Promoting wildlife protection and habitat preservation
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="bg-light rounded-3 p-4 mb-5">
+                <h3 class="text-primary mb-3">Our Values</h3>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <i class="fas fa-heart fa-2x text-danger mb-2"></i>
+                            <h5>Compassion</h5>
+                            <p class="text-muted small">Every animal deserves respect and proper care</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <i class="fas fa-microscope fa-2x text-primary mb-2"></i>
+                            <h5>Accuracy</h5>
+                            <p class="text-muted small">Science-based information you can trust</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <i class="fas fa-hands-helping fa-2x text-success mb-2"></i>
+                            <h5>Accessibility</h5>
+                            <p class="text-muted small">Making knowledge available to everyone</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <h3 class="text-primary mb-3">Join Our Community</h3>
+                <p class="text-muted mb-4">
+                    Whether you're a pet owner, wildlife enthusiast, or simply curious about animals, 
+                    Animal Information is here to support your journey of discovery and care.
+                </p>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary btn-lg">
+                    <i class="fas fa-envelope me-2"></i>Get in Touch
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

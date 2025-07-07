@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+
+{% block title %}Contact - Animal Information{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold text-primary mb-4">Contact Us</h1>
+                <p class="lead text-muted">
+                    Get in touch with our team of animal experts and enthusiasts.
+                </p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <h3 class="text-primary mb-4">Get in Touch</h3>
+                        
+                        <div class="contact-item mb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="contact-icon me-3">
+                                    <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Address</h5>
+                                    <p class="text-muted mb-0">123 Animal care Street<br>Wildlife City, MP INDIA</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item mb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="contact-icon me-3">
+                                    <i class="fas fa-phone fa-2x text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Phone</h5>
+                                    <p class="text-muted mb-0">+91 74547685xx</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item mb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="contact-icon me-3">
+                                    <i class="fas fa-envelope fa-2x text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Email</h5>
+                                    <p class="text-muted mb-0">info@animalinfo.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item mb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="contact-icon me-3">
+                                    <i class="fas fa-clock fa-2x text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Hours</h5>
+                                    <p class="text-muted mb-0">
+                                        Monday - Friday: 9:00 AM - 6:00 PM<br>
+                                        Saturday: 10:00 AM - 4:00 PM<br>
+                                        Sunday: Closed
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="contact-form">
+                        <h3 class="text-primary mb-4">Send Us a Message</h3>
+                        
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <select class="form-select" id="subject" required>
+                                    <option value="">Select a topic...</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="pet-care">Pet Care Question</option>
+                                    <option value="wildlife">Wildlife Information</option>
+                                    <option value="emergency">Animal Emergency</option>
+                                    <option value="feedback">Feedback</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-lg w-100">
+                                <i class="fas fa-paper-plane me-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-5 p-4 bg-light rounded-3">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h4 class="text-primary mb-2">Emergency Animal Situations</h4>
+                        <p class="text-muted mb-0">
+                            For urgent animal health concerns, please contact your local veterinarian or emergency animal clinic immediately.
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-md-end">
+                        <i class="fas fa-exclamation-triangle fa-3x text-warning"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

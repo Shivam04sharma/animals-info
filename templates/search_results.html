@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}Search Results - {{ animal['name'] }}{% endblock %}
+
+{% block content %}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 60vh;">
+    <div class="col-lg-10">
+        <div class="border border-dark rounded-3 p-4 shadow-sm bg-white">
+            <h2 class="mb-4 text-primary text-center">
+                Animal: {{ animal['name'] }}
+            </h2>
+
+            <div class="row">
+                <!-- Left Column -->
+                <div class="col-md-6">
+                    <p><strong>Scientific Name:</strong> {{ animal['taxonomy']['scientific_name'] }}</p>
+                    <p><strong>Habitat:</strong> {{ animal['characteristics']['habitat'] }}</p>
+                    <p><strong>Diet:</strong> {{ animal['characteristics']['diet'] }}</p>
+                    <p><strong>Life Span:</strong> {{ animal['characteristics']['lifespan'] }}</p>
+                    <p><strong>Weight:</strong> {{ animal['characteristics']['weight'] }}</p>
+                    <p><strong>Height:</strong> {{ animal['characteristics']['height'] }}</p>
+                    <p><strong>Top Speed:</strong> {{ animal['characteristics']['top_speed'] }}</p>
+                    <p><strong>Skin Type:</strong> {{ animal['characteristics']['skin_type'] }}</p>
+                </div>
+
+                <!-- Right Column -->
+                <div class="col-md-6">
+                    <p><strong>Color:</strong> {{ animal['characteristics']['color'] }}</p>
+                    <p><strong>Biggest Threat:</strong> {{ animal['characteristics']['biggest_threat'] }}</p>
+                    <p><strong>Group Behavior:</strong> {{ animal['characteristics']['group_behavior'] }}</p>
+                    <p><strong>Estimated Population Size:</strong> {{ animal['characteristics']['estimated_population_size'] }}</p>
+                    <p><strong>Most Distinctive Feature:</strong> {{ animal['characteristics']['most_distinctive_feature'] }}</p>
+                    <p><strong>Slogan:</strong> {{ animal['characteristics']['slogan'] }}</p>
+                    <p><strong>Name of Young:</strong> {{ animal['characteristics']['name_of_young'] }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
