@@ -32,7 +32,7 @@ Users can search for animals by name and view details like habitat, diet, lifesp
 
 | Home | Login | Contact |
 
-Go to repro
+Go to repo
 
 ---
 
