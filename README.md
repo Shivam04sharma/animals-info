@@ -3,7 +3,9 @@
 A responsive web application built with **Flask (Python)** that provides **real-time information about animals**, powered by a live public API.  
 Users can search for animals by name and view details like habitat, diet, lifespan, and more — all fetched dynamically.
 
-🌐 **Live Demo:** _Coming soon_
+🌐 **Live Demo:** https://fs.blabigo.org/s/ShlSvaGY
+
+![Static Badge](https://img.shields.io/badge/python-%235C2983)  ![Static Badge](https://img.shields.io/badge/flask-%235C2983)  ![Static Badge](https://img.shields.io/badge/bootstrap-%235C2983)  ![Static Badge](https://img.shields.io/badge/API-%235C2983)  ![Static Badge](https://img.shields.io/badge/live_server-%235C2983) ![Static Badge](https://img.shields.io/badge/html-%235C2983) ![Static Badge](https://img.shields.io/badge/css-%235C2983)  ![Static Badge](https://img.shields.io/badge/git-%235C2983)
 
 ---
 
