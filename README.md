@@ -82,7 +82,7 @@ animal-info/
 │ ├── base.html  
 │ ├── home.html  
 │ ├── login.html  
-│ └── dashboard.html  
+│ └── Contact.html  
 ├── static/  
 │ ├── css/  
 │ │ └── style.css  
